@@ -1,4 +1,4 @@
-class MyClass {
+export class MyClass {
     x: number;
     y: number;
     constructor(x: number, y :number) {
