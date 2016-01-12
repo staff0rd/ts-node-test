@@ -8,8 +8,8 @@ describe('MyClass', () => {
         subject = new MyModule.MyClass();
     });
 
-    describe('#add', () => {
-        it('should add two numbers together', () => {
+    describe('#win', () => {
+        it('should pass', () => {
             var result : boolean = subject.win();
             if (result !== true) {
                 throw new Error('Expected true but was ' + result);

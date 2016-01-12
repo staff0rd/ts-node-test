@@ -1,5 +1,4 @@
 /// <reference path="node_modules/phaser/typescript/phaser.d.ts" />
-
 export class MyClass {
     d: Phaser.Sprite;
     constructor() {
@@ -9,4 +8,3 @@ export class MyClass {
         return true;
     }
 }
-    
