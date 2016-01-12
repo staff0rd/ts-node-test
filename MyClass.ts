@@ -1,8 +1,12 @@
+/// <reference path="node_modules/phaser/typescript/phaser.d.ts" />
+
 export class MyClass {
-    x: number;
-    y: number;
-    constructor(x: number, y :number) {
-        this.x = x;
-        this.y = y;
+    d: Phaser.Sprite;
+    constructor() {
+        this.d = new Phaser.Sprite(new Phaser.Game, 10, 10);
+    }
+    win() : boolean {
+        return true;
     }
 }
+    
