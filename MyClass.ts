@@ -1,4 +1,6 @@
 /// <reference path="node_modules/phaser/typescript/phaser.d.ts" />
+//import Phaser = require('phaser')
+
 export class MyClass {
     d: Phaser.Sprite;
     constructor() {

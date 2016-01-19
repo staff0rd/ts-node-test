@@ -2,19 +2,21 @@
   "name": "ts-node-test",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "test.js",
   "directories": {
     "test": "test"
   },
   "dependencies": {
+    "jsdom": "^7.2.2",
     "mocha": "^2.3.4",
     "phaser": "^2.4.4",
-    "ts-node": "^0.5.5",
-    "tsd": "^0.6.5"
+    "tsd": "^0.6.5",
+    "typescript": "^1.7.5"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "mocha --compilers ts:ts-node/register"
+    "pretest": "tsc test/test.ts MyClass.ts --module commonjs",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",

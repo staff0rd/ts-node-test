@@ -1,5 +1,14 @@
 /// <reference path="../typings/mocha/mocha.d.ts" />
-import MyModule = require('../MyClass'); 
+/// <reference path="../typings/jsdom/jsdom" />
+/// <reference path="vendor" />
+
+import jsdom = require('jsdom');
+global['document'] = jsdom.jsdom('<!doctype html><html><body></body></html>');
+
+import phaser = require('phaser');
+global['Phaser'] = phaser;
+
+import MyModule = require('../MyClass');    
     
 describe('MyClass', () => {   
     var subject : MyModule.MyClass;
